@@ -25,6 +25,7 @@ Add QOL features that make the browser easier/better to use, such as:
 * Webpage source code viewing option
 
 ## Resources
+### General
 * Professor Cole's "How to Program" (Yellow Pad Technique)
     * https://personal.utdallas.edu/~jxc064000/HowToProgram.html
 * UML Class Diagram Reference
@@ -32,8 +33,17 @@ Add QOL features that make the browser easier/better to use, such as:
 * Git beginning tutorial and cheat sheet
     * https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
     * https://education.github.com/git-cheat-sheet-education.pdf
+    
+### Software
 * Adobe XD for UI design
     * https://www.adobe.com/products/xd.html
+### Framework Tutorials
+* JavaFX Beginning Tutorial
+    * https://docs.oracle.com/javafx/2/get_started/jfxpub-get_started.htm
+* Tkinter Beginning Tutorial (no need to watch the whole thing -- just a good place to get started!)
+    * https://www.youtube.com/watch?v=Ccct5D2AyNM&list=PL-D4DEe_Y-OfRB-ucDGeARH0lYNNWGkPz
+    
+### APIs
 * SimilarWeb API
     * https://www.similarweb.com/corp/developer/
 * Google Safe Browsing API
