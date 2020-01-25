@@ -6,8 +6,6 @@ A simple application capable of rendering a web page (likely using WebView or so
 
 ## Project Milestones
 1. [ ] Set up a weekly meeting time
-1. [ ] Understand Git/Github
-1. [ ] Decide on tech stack/install required software
 1. [ ] Design the browser and create program models (e.g. UML, XD, pseudocode, etc.)
 1. [ ] Create a simple desktop application that can display web pages
 1. [ ] Add basic controls to browser
