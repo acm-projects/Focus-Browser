@@ -40,7 +40,7 @@ Add QOL features that make the browser easier/better to use, such as:
 ### Framework Tutorials
 * JavaFX Beginning Tutorial
     * https://docs.oracle.com/javafx/2/get_started/jfxpub-get_started.htm
-* Tkinter Beginning Tutorial (no need to watch the whole thing -- just a good place to get started!)
+* Tkinter Beginning Tutorial (no need to watch the whole playlist -- just a good place to get started!)
     * https://www.youtube.com/watch?v=Ccct5D2AyNM&list=PL-D4DEe_Y-OfRB-ucDGeARH0lYNNWGkPz
     
 ### APIs
