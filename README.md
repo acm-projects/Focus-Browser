@@ -37,11 +37,14 @@ Add QOL features that make the browser easier/better to use, such as:
 ### Software
 * Adobe XD for UI design
     * https://www.adobe.com/products/xd.html
+    
 ### Framework Tutorials
 * JavaFX Beginning Tutorial
     * https://docs.oracle.com/javafx/2/get_started/jfxpub-get_started.htm
 * Tkinter Beginning Tutorial (no need to watch the whole playlist -- just a good place to get started!)
     * https://www.youtube.com/watch?v=Ccct5D2AyNM&list=PL-D4DEe_Y-OfRB-ucDGeARH0lYNNWGkPz
+* Windows Forms Tutorial
+    * https://docs.microsoft.com/en-us/visualstudio/ide/step-1-create-a-windows-forms-application-project?view=vs-2019
     
 ### APIs
 * SimilarWeb API
