@@ -4,14 +4,6 @@ Focus Browser is a web browser designed to keep users on track while studying or
 ## Minimum Viable Product (MVP)
 A simple application capable of rendering a web page (likely using WebView or some similar widget) and navigating web pages (e.g. back button, forward button, etc.). The focusing features of the browser should be in their most basic form (i.e. simply allowing users to block themselves from given URLs for some period of time).
 
-## Project Milestones
-1. [ ] Set up a weekly meeting time
-1. [ ] Design the browser and create program models (e.g. UML, XD, pseudocode, etc.)
-1. [ ] Create a simple desktop application that can display web pages
-1. [ ] Add basic controls to browser
-1. [ ] Add tracking and web site type restriction features
-1. [ ] Work on stretch goals if there is time
-
 ## Stretch Goals
 Add QOL features that make the browser easier/better to use, such as:
 * Securing the browser using Google Safe Browsing API
@@ -35,6 +27,8 @@ Add QOL features that make the browser easier/better to use, such as:
 ### Software
 * Adobe XD for UI design
     * https://www.adobe.com/products/xd.html
+* Visual Studio Code for resolving merge conflict and acting as a general text editor
+    * https://code.visualstudio.com/
     
 ### Framework Tutorials
 * JavaFX Beginning Tutorial
