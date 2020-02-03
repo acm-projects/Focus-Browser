@@ -6,6 +6,7 @@ A simple application capable of rendering a web page (likely using WebView or so
 
 ## Stretch Goals
 Add QOL features that make the browser easier/better to use, such as:
+* Adding advanced rendering features and JavaScript support
 * Securing the browser using Google Safe Browsing API
 * Allowing users to restrict themselves from certain types of websites using the SimilarWeb API
 * Ability for the browser to interact directly with YouTube so users can watch educational videos (e.g. PatrickJMT, Khan Academy, etc.) and only get counted as “off track” for non-educational videos (e.g. Music Videos)
