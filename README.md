@@ -1,5 +1,9 @@
 # Focus Browser
-Focus Browser is a web browser designed to keep users on track while studying or doing research. Users can set goals, restrict themselves from distracting websites, and access statistics that indicate how much time they spend off track.
+Focus Browser is a web browser designed to keep users on track while studying or doing research. Users can set goals, restrict themselves from distracting websites, 
+
+
+
+and access statistics that indicate how much time they spend off track.
 
 ## Minimum Viable Product (MVP)
 A simple application capable of rendering a web page (likely using WebView or some similar widget) and navigating web pages (e.g. back button, forward button, etc.). The focusing features of the browser should be in their most basic form (e.g. simply allowing users to block themselves from given URLs for some period of time).
