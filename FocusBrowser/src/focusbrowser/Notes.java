@@ -11,9 +11,9 @@ public class Notes
 {
 
 	// Variables
-	private ArrayList<String> notes;
-	private FileReader in = null;    // 
-	private FileWriter out = null;   //
+	private ArrayList<String> notes; // Holds a list of user information
+	private FileReader in = null;    // Holds access to input file
+	private FileWriter out = null;   // Holds access to output file
 	
 	public Notes()
 	{
@@ -34,10 +34,29 @@ public class Notes
 	
 	/*************************************************************************************************************************
 	 * @author Stuart Little
-	 * @param int index | The index at which we are attempting ot obtain a note
+	 * @param int index | The index at which we are attempting to obtain a note
 	 * @return The string found at the index, or returns a blank string if nothing was found. 
 	 *************************************************************************************************************************/
 	public String getNote(int index)
 	{ return (index < notes.size()) ? notes.get(index) : ""; }
+	
+	/*************************************************************************************************************************
+	 * @author Stuart Little
+	 * @param int index | The index at which we are attempting to delete a note
+	 * @return boolean specifying whether or not note was deleted 
+	 *************************************************************************************************************************/
+	public boolean deleteNote(int index)
+	{ 
+		// Variables
+		boolean noteDeleted = false;
+		
+		if (index < notes.size())
+		{
+			notes.remove(index);
+			noteDeleted = true;
+		}
+		
+		return noteDeleted;
+	}
 	
 }
