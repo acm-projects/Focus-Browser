@@ -25,10 +25,26 @@ public class Main extends Application
 	WebView tab = new WebView();
 	WebEngine url = tab.getEngine();
 	TextField textField = new TextField();
+	
+
+
 
     @Override
     public void start(Stage primaryStage) throws Exception{
         
+    	//popup handler
+    	url.getEngine().setCreatePopupHandler(new Callback<PopupFeatures, WebEngine>() {
+
+            @Override
+            public WebEngine call(PopupFeatures p) {
+                Stage stage = new Stage(StageStyle.UTILITY);
+                WebView wv2 = new WebView();
+                stage.setScene(new Scene(wv2));
+                stage.show();
+                return wv2.getEngine();
+            }
+        });
+    	
         textField.setOnAction((EventHandler<ActionEvent>) new EventHandler<ActionEvent>() {
     	    public void handle(ActionEvent event) {
     	            url.load(textField.getText());
@@ -60,6 +76,7 @@ public class Main extends Application
         primaryStage.setScene(scene);
         primaryStage.setMaximized(true);
         primaryStage.setFullScreen(true);
+        
         primaryStage.show();
     }
 
