@@ -8,6 +8,7 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JavaFX13"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JAVAFX_13"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JAVAFX"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JavaFX12"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
