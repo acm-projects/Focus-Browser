@@ -47,27 +47,27 @@ public class Main extends Application
         Scene newScene = homeScreen(scene);
         
     	//popup handler
-    	url.getEngine().setCreatePopupHandler(new Callback<PopupFeatures, WebEngine>() {
-
-            @Override
-            public WebEngine call(PopupFeatures p) {
-                Stage stage = new Stage(StageStyle.UTILITY);
-                WebView wv2 = new WebView();
-                stage.setScene(new Scene(wv2));
-                stage.show();
-                return wv2.getEngine();
-            }
-        });
-    	
-        textField.setOnAction((EventHandler<ActionEvent>) new EventHandler<ActionEvent>() {
-    	    public void handle(ActionEvent event) {
-    	            url.load(textField.getText());
-    	    }
-    	});
+//    	url.getEngine().setCreatePopupHandler(new Callback<PopupFeatures, WebEngine>() {
+//
+//            @Override
+//            public WebEngine call(PopupFeatures p) {
+//                Stage stage = new Stage(StageStyle.UTILITY);
+//                WebView wv2 = new WebView();
+//                stage.setScene(new Scene(wv2));
+//                stage.show();
+//                return wv2.getEngine();
+//            }
+//        });
+//    	
+//        textField.setOnAction((EventHandler<ActionEvent>) new EventHandler<ActionEvent>() {
+//    	    public void handle(ActionEvent event) {
+//    	            url.load(textField.getText());
+//    	    }
+//    	});
         
-    	BorderPane bPane = new BorderPane();
-    	
-    	url.load("https://www.google.com");
+//    	BorderPane bPane = new BorderPane();
+//    	
+//    	url.load("https://www.google.com");
         
         primaryStage.setScene(newScene);
         primaryStage.setMaximized(true);
@@ -116,27 +116,6 @@ public class Main extends Application
     	VBox searchBox = new VBox();
     	searchBox.setAlignment(Pos.CENTER);
     	
-    	tabAndUrl.setFont(new Font(30.0));
-    	tabAndUrl.setTextAlignment(TextAlignment.CENTER);
-    	
-    	// Placeholder for Notes
-    	Text notes = new Text("NOTES TAB");
-    	
-    	notes.setFont(new Font(30.0));
-    	notes.setTextAlignment(TextAlignment.CENTER);
-    	
-    	bPane.setTop(tabAndUrl);
-    	bPane.setLeft(notes);
-        bPane.setCenter(tab);
-        
-        Scene scene = new Scene(bPane,750,500);
-        
-        primaryStage.setScene(scene);
-        primaryStage.setMaximized(true);
-        primaryStage.setFullScreen(true);
-        
-        primaryStage.show();
-    }
     	// creating boundaries for searchBar
     	Text leftBorder = new Text("           ");
     	leftBorder.setFont(new Font(50.0));
