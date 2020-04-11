@@ -67,7 +67,7 @@ public class Main extends Application
         
 //    	BorderPane bPane = new BorderPane();
 //    	
-//    	url.load("https://www.google.com");
+//    	url.load("https://docs.google.com/presentation/d/1TnlGMzQuFsi_JeOKAtMBG_VMLqq2IQbBap790P3NGdw/edit?usp=sharing");
         
         primaryStage.setScene(newScene);
         primaryStage.setMaximized(true);
@@ -93,7 +93,7 @@ public class Main extends Application
     	// creating WebView for website to load
     	WebView tab = new WebView();
     	WebEngine url = tab.getEngine();
-    	url.load("https://www.google.com");
+    	url.load("https://docs.google.com/presentation/d/1TnlGMzQuFsi_JeOKAtMBG_VMLqq2IQbBap790P3NGdw/edit?usp=sharing");
     	
     	//creating buttons
     	Button back = new Button("<-");
@@ -126,13 +126,25 @@ public class Main extends Application
     	leftBorder.setTextAlignment(TextAlignment.CENTER);
     	
     	// creating menu area
-    	VBox vbox2 = new VBox();
-    	vbox2.setAlignment(Pos.CENTER_LEFT);
+    	HBox menuBox = new HBox();
+    	StackPane sPane = new StackPane();
+    	menuBox.setAlignment(Pos.TOP_LEFT);
     	Rectangle menu = new Rectangle();
-    	menu.setHeight(980);
-    	menu.setWidth(50);
     	menu.setFill(Color.web("#474646"));
-    	vbox2.getChildren().add(menu);
+    	Button menuButton = new Button("->");
+    	
+    	//closed menu
+    	menu.setHeight(900);
+    	menu.setWidth(50);
+    	
+    	//open menu
+    	menu.setHeight(900);
+    	menu.setWidth(400);
+    	
+    	sPane.setAlignment(menuButton, Pos.CENTER_RIGHT);
+    	sPane.getChildren().addAll(menu, menuButton);
+    	menuBox.getChildren().add(sPane);
+
     	
     	// creating scroll bar
     	HBox hbox2 = new HBox();
@@ -163,14 +175,14 @@ public class Main extends Application
     	// putting each component in correct spots
     	hbox.getChildren().addAll(back, forward);
     	vbox.getChildren().add(tabPane);
-    	vbox.getChildren().addAll(hbox, vbox2);
+    	vbox.getChildren().addAll(hbox, hbox2, menuBox);
     	imageBox.getChildren().add(searchBox);
     	    	
         bPane.setCenter(imageBox);
 //        bPane.setCenter(searchBar);
         bPane.setLeft(vbox);
         bPane.setRight(sc);
-//        bPane.setLeft(menu);
+        bPane.setCenter(tab);
 
     	
       
