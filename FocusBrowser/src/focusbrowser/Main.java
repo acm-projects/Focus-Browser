@@ -182,7 +182,7 @@ public class Main extends Application
 //        bPane.setCenter(searchBar);
         bPane.setLeft(vbox);
         bPane.setRight(sc);
-        bPane.setCenter(tab);
+//        bPane.setCenter(tab);
 
     	
       
