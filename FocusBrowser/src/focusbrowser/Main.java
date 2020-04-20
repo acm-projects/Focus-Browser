@@ -48,7 +48,7 @@ public class Main extends Application
     	BorderPane root = new BorderPane();
         Scene scene = new Scene(root, 1920, 1080);
         
-        Scene newScene = homeScreen(scene);
+        Scene newScene = blockedScreen(scene);
         
     	//popup handler
 //    	url.getEngine().setCreatePopupHandler(new Callback<PopupFeatures, WebEngine>() {
@@ -124,6 +124,15 @@ public class Main extends Application
     	refresh.setGraphic(ivRefresh);
     	refresh.setStyle("-fx-background-color: transparent;");
     	
+    	Image forebiddenImage = new Image("file:///Users/vamikachatlani/Downloads/forbidden.png");
+    	ImageView ivForebidden = new ImageView(forebiddenImage);
+    	ivForebidden.setFitHeight(30);
+    	ivForebidden.setFitWidth(30);
+    	Button forebidden = new Button();
+    	forebidden.setPadding(Insets.EMPTY);
+    	forebidden.setGraphic(ivForebidden);
+    	forebidden.setStyle("-fx-background-color: transparent;");
+    	
     	//creating tabs
     	TabPane tabPane = new TabPane();
     	Tab main = new Tab("                      ");
@@ -183,11 +192,19 @@ public class Main extends Application
     	iv.setLayoutX(250);
     	iv.setLayoutY(290);
     	searchBox.setAlignment(Pos.CENTER);
-
+    	
+    	//creating url bar
+    	HBox urlBox = new HBox();
+    	urlBox.setAlignment(Pos.TOP_CENTER);
+    	TextField urlBar = new TextField();
+    	urlBar.setPrefWidth(1400);
+    	urlBar.setPrefHeight(30);
+    	urlBox.getChildren().add(urlBar);
+    	
     	
     	
     	// putting each component in correct spots
-    	hbox.getChildren().addAll(back, forward, refresh);
+    	hbox.getChildren().addAll(back, forward, refresh, urlBar, forebidden);
     	vbox.getChildren().addAll(tabPane, hbox, menuBox);
     	
     	StackPane mainStack = new StackPane();
@@ -245,6 +262,15 @@ public class Main extends Application
     	refresh.setPadding(Insets.EMPTY);
     	refresh.setGraphic(ivRefresh);
     	refresh.setStyle("-fx-background-color: transparent;");
+    	
+    	Image forebiddenImage = new Image("file:///Users/vamikachatlani/Downloads/forbidden.png");
+    	ImageView ivForebidden = new ImageView(forebiddenImage);
+    	ivForebidden.setFitHeight(30);
+    	ivForebidden.setFitWidth(30);
+    	Button forebidden = new Button();
+    	forebidden.setPadding(Insets.EMPTY);
+    	forebidden.setGraphic(ivForebidden);
+    	forebidden.setStyle("-fx-background-color: transparent;");
     	
     	//creating tabs
     	TabPane tabPane = new TabPane();
@@ -313,11 +339,19 @@ public class Main extends Application
 //    	iv.setLayoutX(250);
 //    	iv.setLayoutY(290);
     	searchBox.setAlignment(Pos.CENTER);
+    	
+    	//creating url bar
+    	HBox urlBox = new HBox();
+    	urlBox.setAlignment(Pos.TOP_CENTER);
+    	TextField urlBar = new TextField();
+    	urlBar.setPrefWidth(1400);
+    	urlBar.setPrefHeight(30);
+    	urlBox.getChildren().add(urlBar);
 
     	
     	
     	// putting each component in correct spots
-    	hbox.getChildren().addAll(back, forward, refresh);
+    	hbox.getChildren().addAll(back, forward, refresh, urlBar, forebidden);
     	vbox.getChildren().addAll(tabPane, hbox, menuBox);
     	
     	StackPane mainStack = new StackPane();
