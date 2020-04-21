@@ -135,11 +135,9 @@ public class Main extends Application
     	
     	//creating tabs
     	TabPane tabPane = new TabPane();
-    	Tab main = new Tab("                      ");
-    	Tab newTab = new Tab("                      ");
-    	main.setStyle("-fx-background-color: #474646;");
-    	newTab.setStyle("-fx-background-color: #474646;");
-    	tabPane.getTabs().addAll(main, newTab);
+    	Tab main = new Tab("Home                  ");
+    	main.setStyle("-fx-background-color: #474646; -fx-text-base-color: #FFFFFF");
+    	tabPane.getTabs().add(main);
 
     	
     	// creating search bar for URL
@@ -274,11 +272,9 @@ public class Main extends Application
     	
     	//creating tabs
     	TabPane tabPane = new TabPane();
-    	Tab main = new Tab("                      ");
-    	Tab newTab = new Tab("                      ");
-    	main.setStyle("-fx-background-color: #474646;");
-    	newTab.setStyle("-fx-background-color: #474646;");
-    	tabPane.getTabs().addAll(main, newTab);
+    	Tab main = new Tab("Home                  ");
+    	main.setStyle("-fx-background-color: #474646; -fx-text-base-color: #FFFFFF");
+    	tabPane.getTabs().addAll(main);
 
     	
     	// creating search bar for URL
