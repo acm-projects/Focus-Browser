@@ -48,7 +48,7 @@ public class Main extends Application
     	BorderPane root = new BorderPane();
         Scene scene = new Scene(root, 1920, 1080);
         
-        Scene newScene = blockedScreen(scene);
+        Scene newScene = homeScreen(scene);
         
     	//popup handler
 //    	url.getEngine().setCreatePopupHandler(new Callback<PopupFeatures, WebEngine>() {
@@ -94,7 +94,7 @@ public class Main extends Application
     	// creating WebView for website to load
     	WebView tab = new WebView();
     	WebEngine url = tab.getEngine();
-    	url.load("https://docs.google.com/presentation/d/1TnlGMzQuFsi_JeOKAtMBG_VMLqq2IQbBap790P3NGdw/edit?usp=sharing");
+    	url.load("https://google.com");
     	
     	//creating buttons
     	Image backImage = new Image("file:///Users/vamikachatlani/Downloads/previous.png");
@@ -145,6 +145,8 @@ public class Main extends Application
     	searchBar.setPrefWidth(750);
     	VBox searchBox = new VBox();
     	searchBox.setAlignment(Pos.CENTER);
+    	searchBox.setPrefWidth(1600);
+    	searchBox.setPrefHeight(1900);
    
     	
     	// creating menu area
@@ -184,8 +186,9 @@ public class Main extends Application
     	imageBox.getChildren().add(searchBox);
     	
     	searchBox.setSpacing(50.0);
-    	searchBox.getChildren().add(iv);
-    	searchBox.getChildren().add(searchBar);
+//    	searchBox.getChildren().add(iv);
+//    	searchBox.getChildren().add(searchBar);
+    	searchBox.getChildren().add(tab);
     	iv.setManaged(false);
     	iv.setLayoutX(250);
     	iv.setLayoutY(290);
@@ -207,8 +210,9 @@ public class Main extends Application
     	
     	StackPane mainStack = new StackPane();
     	mainStack.getChildren().addAll(vbox, imageBox);
-    	    	
+    	    
         bPane.setCenter(mainStack);
+       
 
         
     	Scene scene2 = new Scene(bPane, 1920, 1080);
